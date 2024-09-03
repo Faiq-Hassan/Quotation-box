@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotation Box</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card quotation-card">
+        <img src="nav logo.png" alt="logo">
+        <h2>Request a Quotation</h2>
+        <form>
+            <!-- Customer Information -->
+            <div class="section">
+                <h3>Customer Information</h3>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <!-- Product Details -->
+            <div class="section">
+                <h3>Product Details</h3>
+                <label for="gloveType">Glove Type:</label>
+                <select id="gloveType" name="gloveType" required>
+                    <option value="winter">Winter Gloves</option>
+                    <option value="sports">Sports Gloves</option>
+                    <option value="safety">Safety Gloves</option>
+                </select>
+
+                <label for="material">Material:</label>
+                <select id="material" name="material" required>
+                    <option value="leather">Leather</option>
+                    <option value="cotton">Cotton</option>
+                    <option value="synthetic">Synthetic</option>
+                </select>
+
+                <label for="size">Size:</label>
+                <select id="size" name="size" required>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+
+                <label for="color">Color:</label>
+                <input type="color" id="color" name="color">
+            </div>
+
+            <!-- Additional Specifications -->
+            <div class="section">
+                <h3>Additional Specifications</h3>
+                <label for="customization">Customization:</label>
+                <input type="text" id="customization" name="customization" placeholder="e.g., logo printing, special packaging">
+
+                <label for="deliveryDate">Preferred Delivery Date:</label>
+                <input type="date" id="deliveryDate" name="deliveryDate" required>
+
+                <label for="notes">Additional Notes:</label>
+                <textarea id="notes" name="notes" rows="4" placeholder="Any extra requirements or comments"></textarea>
+            </div>
+
+            <!-- Pricing & Terms -->
+            <div class="section">
+                <h3>Pricing & Terms</h3>
+                <label for="budget">Budget Range (Optional):</label>
+                <input type="number" id="budget" name="budget" placeholder="Enter your budget">
+
+                <label for="paymentTerms">Payment Terms:</label>
+                <select id="paymentTerms" name="paymentTerms" required>
+                    <option value="advance">Advance Payment</option>
+                    <option value="delivery">On Delivery</option>
+                </select>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="section">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
